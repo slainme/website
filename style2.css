@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("bg.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: #151515;
+    gap: 8px;
+    flex-wrap: wrap;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+h1{
+    color: whitesmoke;
+    font-family: "delius", sans-serif;
+}
+h3{
+    font-family: "cascadia mono", sans-serif;
+    color: white;
+}
+h4{
+    color: rgb(204, 204, 204);
+}
+p{
+    color: rgb(204, 204, 204);
+    font-family: "consolas", sans-serif;
+}
+#padding1{
+  padding-bottom: 2%;
+}
+#padding2{
+  padding-bottom: 1%;
+}
+.contact {
+    color: rgba(255, 255, 255, 0.692);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.397);
+    background: rgba(255, 255, 255, 0.068);
+    overflow: hidden;
+    font-size: 0.9rem;
+    font-weight: 600;
+    gap: 8px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: 0.2s;
+    border: 1px solid transparent;
+    text-align: center;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  .contact:hover {
+    border-color: rgba(255, 255, 255, 0.623);
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.144),
+      rgba(255, 255, 255, 0.247),
+      rgba(255, 255, 255, 0.39)
+    );
+    box-shadow: 0 6px rgba(255, 255, 255, 0.623);
+    transform: translateY(-6px);
+  }
+  
+  .contact:active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+#contactImg img {
+  width: 24px;
+  height: 24px;
+}
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center;
+  }
+.button-label {
+  margin-top: 14px;
+  font-size: 14px;
+  font-family: "consolas";
+  color: white;
+  }  
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
